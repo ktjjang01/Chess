@@ -2,8 +2,8 @@ package com.landon.chess;
 
 public class Test {
     public static void main(String[] args) {
-        Board board = new Board();
+        Board gameBoard = new Board();
 
-        board.printBoard();
+        gameBoard.printBoard();
     }
 }

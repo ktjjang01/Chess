@@ -1,6 +1,8 @@
 package com.landon.chess.pieces;
 
 public abstract class Piece {
+    public Color color;
+
     public enum Color {
         BLACK, WHITE
     }
@@ -9,8 +11,9 @@ public abstract class Piece {
         this.color = color;
     }
 
-    public Color color;
-
     public abstract void move();
 
+    public Color getColor() {
+        return color;
+    }
 }

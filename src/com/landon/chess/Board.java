@@ -46,15 +46,18 @@ public class Board {
     }
 
     public void printBoard() {
+        System.out.println("-----------------------------------------");
         for (int i = 0; i <= 7; i++) {
+            System.out.print("|");
             for (int j = 0; j <= 7; j++) {
                 if (board[i][j] == null) {
-                    System.out.print(null + " ");
+                    System.out.format("%4s", " xx |"); //TODO: formatting
                 } else {
-                    System.out.print(board[i][j].toString() + " ");
+                    System.out.format("%4s", board[i][j].toString() + "|");
                 }
             }
             System.out.println();
+            System.out.println("-----------------------------------------");
         }
     }
 }
