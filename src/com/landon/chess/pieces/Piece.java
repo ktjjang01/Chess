@@ -9,17 +9,17 @@ public abstract class Piece {
     public Color color;
     public Position curPosition;
     public Board curBoard;
-    
+
     public HashMap<Position, Action> possibleNxtMoves; 
-    
+
     public enum Color {
         BLACK, WHITE
     }
 
     public enum Action {
-    	MOVE, ATTACK
+        MOVE, ATTACK
     }
-    
+
     public Piece(Color color, Position p) {
         this.color = color;
         curPosition = p;
