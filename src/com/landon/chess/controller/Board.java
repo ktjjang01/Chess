@@ -1,6 +1,5 @@
 package com.landon.chess.controller;
 
-
 import com.landon.chess.pieces.Bishop;
 import com.landon.chess.pieces.King;
 import com.landon.chess.pieces.Knight;
