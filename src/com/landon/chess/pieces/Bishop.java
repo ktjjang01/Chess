@@ -1,8 +1,10 @@
 package com.landon.chess.pieces;
 
+import com.landon.chess.utils.Position;
+
 public class Bishop extends Piece {
-    public Bishop(Color color) {
-        super(color);
+    public Bishop(Color color, Position p) {
+        super(color, p);
     }
 
     @Override

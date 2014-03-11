@@ -1,8 +1,10 @@
 package com.landon.chess.pieces;
 
+import com.landon.chess.utils.Position;
+
 public class King extends Piece {
-    public King(Color color) {
-        super(color);
+    public King(Color color, Position p) {
+        super(color, p);
     }
 
     @Override

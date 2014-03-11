@@ -1,8 +1,10 @@
 package com.landon.chess.pieces;
 
+import com.landon.chess.utils.Position;
+
 public class Pawn extends Piece {
-    public Pawn(Color color) {
-        super(color);
+    public Pawn(Color color, Position p) {
+        super(color, p);
     }
 
     @Override
