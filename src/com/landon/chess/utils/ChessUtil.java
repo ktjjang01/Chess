@@ -26,7 +26,7 @@ public class ChessUtil {
         return (insideOfBoard(target)) ? target : null;
     }
 
-    public static Position getPossitionWest(Position p) {
+    public static Position getPositionWest(Position p) {
         Position target = new Position(p.getX() - 1, p.getY());
 
         return (insideOfBoard(target)) ? target : null;

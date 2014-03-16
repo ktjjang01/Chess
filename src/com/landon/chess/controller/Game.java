@@ -1,6 +1,6 @@
 package com.landon.chess.controller;
 
-public class Test {
+public class Game {
     public static void main(String[] args) {
         Board gameBoard = new Board();
 

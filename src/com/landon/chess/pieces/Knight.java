@@ -8,12 +8,13 @@ public class Knight extends Piece {
     }
 
     @Override
-    public void move() {
-        // TODO Auto-generated method stub
+    public String toString() {
+        return "KNHT";
     }
 
     @Override
-    public String toString() {
-        return "KNHT";
+    public void possibleMoveNorth() {
+        // Illegal move
+        // throw new IllegalMovementException() from ChessException class;
     }
 }

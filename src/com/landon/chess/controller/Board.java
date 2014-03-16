@@ -10,7 +10,7 @@ import com.landon.chess.pieces.Rook;
 import com.landon.chess.utils.Position;
 
 public class Board {
-    Piece[][] board;
+    private Piece[][] board;
 
     public Board() {
         board = new Piece[8][8];
@@ -60,5 +60,13 @@ public class Board {
             System.out.println();
             System.out.println("-----------------------------------------");
         }
+    }
+
+    public Piece[][] getBoard() {
+        return board;
+    }
+
+    public Piece getPiece(Position p) {
+        return board[p.getX()][p.getY()];
     }
 }

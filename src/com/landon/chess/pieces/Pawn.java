@@ -8,12 +8,12 @@ public class Pawn extends Piece {
     }
 
     @Override
-    public void move() {
-        // TODO Auto-generated method stub
+    public String toString() {
+        return "PAWN";
     }
 
     @Override
-    public String toString() {
-        return "PAWN";
+    public void possibleMoveNorth() {
+        // TODO Auto-generated method stub
     }
 }

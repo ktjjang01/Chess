@@ -8,12 +8,13 @@ public class Bishop extends Piece {
     }
 
     @Override
-    public void move() {
-        // TODO Auto-generated method stub
+    public String toString() {
+        return "BSHP";
     }
 
     @Override
-    public String toString() {
-        return "BSHP";
+    public void possibleMoveNorth() {
+        // Illegal move
+        // throw new IllegalMovementException() from ChessException class;
     }
 }

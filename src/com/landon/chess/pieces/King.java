@@ -8,12 +8,12 @@ public class King extends Piece {
     }
 
     @Override
-    public void move() {
-        // TODO Auto-generated method stub
+    public String toString() {
+        return "KING";
     }
 
     @Override
-    public String toString() {
-        return "KING";
+    public void possibleMoveNorth() {
+        // TODO Auto-generated method stub
     }
 }
