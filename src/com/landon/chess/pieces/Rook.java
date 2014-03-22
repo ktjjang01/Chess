@@ -1,6 +1,5 @@
 package com.landon.chess.pieces;
 
-import com.landon.chess.pieces.Piece.Action;
 import com.landon.chess.utils.ChessUtil;
 import com.landon.chess.utils.Position;
 
@@ -27,6 +26,7 @@ public class Rook extends Piece {
                 if (p.getColor() != this.color) { // an enemy
                     possibleNxtMoves.put(destination, Action.ATTACK);
                 }
+                break;
             }
 
             destination = ChessUtil.getPositionNorth(destination);

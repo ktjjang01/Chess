@@ -26,6 +26,7 @@ public class Queen extends Piece {
                 if (p.getColor() != this.color) { // an enemy
                     possibleNxtMoves.put(destination, Action.ATTACK);
                 }
+                break;
             }
 
             destination = ChessUtil.getPositionNorth(destination);
