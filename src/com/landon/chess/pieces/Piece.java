@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.landon.chess.controller.Board;
+import com.landon.chess.exceptions.IllegalMovementException;
 import com.landon.chess.utils.Position;
 
 public abstract class Piece {
@@ -27,7 +28,7 @@ public abstract class Piece {
         possibleNxtMoves = new HashMap<Position, Piece.Action>();
     }
 
-    public abstract void possibleMoveNorth();
+    public abstract void possibleMoveNorth() throws IllegalMovementException;
 
     public Color getColor() {
         return color;

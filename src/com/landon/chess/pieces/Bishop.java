@@ -1,5 +1,6 @@
 package com.landon.chess.pieces;
 
+import com.landon.chess.exceptions.IllegalMovementException;
 import com.landon.chess.utils.Position;
 
 public class Bishop extends Piece {
@@ -9,12 +10,17 @@ public class Bishop extends Piece {
 
     @Override
     public String toString() {
-        return "BSHP";
+        switch (this.color) {
+        case BLACK:
+            return "bBISP";
+        case WHITE:
+            return "wBISP";
+        }
+        return null;
     }
 
     @Override
-    public void possibleMoveNorth() {
-        // Illegal move
-        // throw new IllegalMovementException() from ChessException class;
+    public void possibleMoveNorth() throws IllegalMovementException {
+        throw new IllegalMovementException(this.toString() + " cannot move North.");
     }
 }

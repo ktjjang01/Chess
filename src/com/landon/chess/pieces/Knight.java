@@ -1,5 +1,6 @@
 package com.landon.chess.pieces;
 
+import com.landon.chess.exceptions.IllegalMovementException;
 import com.landon.chess.utils.Position;
 
 public class Knight extends Piece {
@@ -9,12 +10,17 @@ public class Knight extends Piece {
 
     @Override
     public String toString() {
-        return "KNHT";
+    	switch (this.color) {
+		case BLACK:
+			return "bKNHT";
+		case WHITE:
+			return "wKNHT";
+        }
+		return null;
     }
 
     @Override
-    public void possibleMoveNorth() {
-        // Illegal move
-        // throw new IllegalMovementException() from ChessException class;
+    public void possibleMoveNorth() throws IllegalMovementException {
+        throw new IllegalMovementException(this.toString() + " cannot move North.");
     }
 }

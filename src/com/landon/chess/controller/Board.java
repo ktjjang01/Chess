@@ -47,19 +47,23 @@ public class Board {
     }
 
     public void printBoard() {
-        System.out.println("-----------------------------------------");
+        System.out.println("-----------------------------------------------------");
+        System.out.println("| |--0-----1-----2-----3-----4-----5-----6-----7--| |");
         for (int i = 0; i <= 7; i++) {
-            System.out.print("|");
+            System.out.print("|" + i + "|");
             for (int j = 0; j <= 7; j++) {
                 if (board[i][j] == null) {
-                    System.out.format("%4s", " xx |"); //TODO: formatting
+                    System.out.format("%4s", "  x  |"); //TODO: formatting
                 } else {
                     System.out.format("%4s", board[i][j].toString() + "|");
                 }
+                if (j == 7) System.out.print(i + "|");
             }
             System.out.println();
-            System.out.println("-----------------------------------------");
+            if (i != 7) System.out.println("| |-----------------------------------------------| |");
         }
+        System.out.println("| |--0-----1-----2-----3-----4-----5-----6-----7--| |");
+        System.out.println("-----------------------------------------------------");
     }
 
     public Piece[][] getBoard() {

@@ -9,7 +9,13 @@ public class Pawn extends Piece {
 
     @Override
     public String toString() {
-        return "PAWN";
+    	switch (this.color) {
+		case BLACK:
+			return "bPAWN";
+		case WHITE:
+			return "wPAWN";
+        }
+		return null;
     }
 
     @Override

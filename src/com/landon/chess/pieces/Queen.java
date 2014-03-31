@@ -10,7 +10,13 @@ public class Queen extends Piece {
 
     @Override
     public String toString() {
-        return "QUEN";
+    	switch (this.color) {
+		case BLACK:
+			return "bQUEN";
+		case WHITE:
+			return "wQUEN";
+        }
+		return null;
     }
 
     @Override
