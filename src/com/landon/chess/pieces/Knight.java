@@ -10,13 +10,13 @@ public class Knight extends Piece {
 
     @Override
     public String toString() {
-    	switch (this.color) {
-		case BLACK:
-			return "bKNHT";
-		case WHITE:
-			return "wKNHT";
+        switch (this.color) {
+        case BLACK:
+            return "bKNHT";
+        case WHITE:
+            return "wKNHT";
         }
-		return null;
+        return null;
     }
 
     @Override

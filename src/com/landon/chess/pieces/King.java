@@ -9,13 +9,13 @@ public class King extends Piece {
 
     @Override
     public String toString() {
-    	switch (this.color) {
-		case BLACK:
-			return "bKING";
-		case WHITE:
-			return "wKING";
+        switch (this.color) {
+        case BLACK:
+            return "bKING";
+        case WHITE:
+            return "wKING";
         }
-		return null;
+        return null;
     }
 
     @Override

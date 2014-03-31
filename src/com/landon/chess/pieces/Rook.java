@@ -10,13 +10,13 @@ public class Rook extends Piece {
 
     @Override
     public String toString() {
-    	switch (this.color) {
-		case BLACK:
-			return "bROOK";
-		case WHITE:
-			return "wROOK";
+        switch (this.color) {
+        case BLACK:
+            return "bROOK";
+        case WHITE:
+            return "wROOK";
         }
-		return null;
+        return null;
     }
 
     @Override
