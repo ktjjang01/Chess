@@ -2,7 +2,7 @@ Chess
 =====
 
 Generic Chess game in command line environment
-
+```
 -----------------------------------------------------
 | |--0-----1-----2-----3-----4-----5-----6-----7--| |
 |0|bROOK|bKNHT|bBISP|bQUEN|bKING|bBISP|bKNHT|bROOK|0|
@@ -22,3 +22,4 @@ Generic Chess game in command line environment
 |7|wROOK|wKNHT|wBISP|wQUEN|wKING|wBISP|wKNHT|wROOK|7|
 | |--0-----1-----2-----3-----4-----5-----6-----7--| |
 -----------------------------------------------------
+```
