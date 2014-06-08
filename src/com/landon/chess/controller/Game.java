@@ -43,7 +43,6 @@ public class Game {
                 Board gameBoard = new Board();
                 gameBoard.printBoard();
 
-
                 break;
             }
 
@@ -74,6 +73,7 @@ public class Game {
         System.out.println("Would you like to play? [Y/n]");
 
         playAgain = userInput.next().equals("Y");
+        if (playAgain) gameState = STATE_START_NEW_GAME;
     }
     // TODO: maybe move this to Util package?
     private static void log(String msg) {
